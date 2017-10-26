@@ -68,6 +68,17 @@ cp rcnn/CXX_OP/* incubator-mxnet/src/operator/
 
 To build MXNet from source, please refer to the [tutorial](https://mxnet.incubator.apache.org/get_started/build_from_source.html).
 
+3.1. 
+Build with both GPU and OpenCV support:
+```
+make -j USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
+```
+3.2.
+```
+cd python
+sudo python setup.py all
+```
+
 4. Build related cython code.
 
 ```
