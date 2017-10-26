@@ -76,7 +76,7 @@ make -j USE_BLAS=openblas USE_CUDA=1 USE_CUDA_PATH=/usr/local/cuda USE_CUDNN=1
 3.2.
 ```
 cd python
-sudo python setup.py all
+sudo python setup.py install
 ```
 
 4. Build related cython code.
